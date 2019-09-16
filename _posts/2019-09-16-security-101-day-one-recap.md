@@ -13,10 +13,10 @@ image: /Badges_02.png
 
 Recap:
 
-> * Into of the project: 4 phase and their activities, aims and objectives
-> * Exploring the themes of the project: youth work, human&nbsp; rights, democracy and digital security
-> * Getting to know each other
-> * Exploring [Badgecraft.eu](Badgecraft.eu){: target="_blank"}
+* Into of the project: 4 phase and their activities, aims and objectives
+* Exploring the themes of the project: youth work, human&nbsp; rights, democracy and digital security
+* Getting to know each other
+* Exploring [Badgecraft.eu](Badgecraft.eu){: target="_blank"}
 
 SECURITY101: Digital Security and Privacy for Youth Workers
 
