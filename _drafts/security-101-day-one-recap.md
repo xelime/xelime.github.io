@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Security 101 Day One Recap
 featured: true
 author: XELI
 tags:
