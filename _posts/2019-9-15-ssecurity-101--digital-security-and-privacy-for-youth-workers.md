@@ -3,7 +3,7 @@ layout: post
 title: Security 101- Digital Security and Privacy for Youth Workers
 featured: true
 author: XELI
-tags: [digitalsecurity, youthwork]
+tags:
 image: /images/info.png
 ---
 
