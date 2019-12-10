@@ -14,22 +14,16 @@
                 </div>
             </div>
             <div class="row">
-
                 {% for post in site.posts limit: 3 %}
                 <div class="col-lg-4">
                     <div class="single-card card">
                         <img class="card-top-img" src="{{ post.image | relative_url }}" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-subtitle mb-3">{{ post.date }}</p>
-                            <a href="#">
+                            <a href="{{ post.url }}">
                                 <h4 class="card-title mb-4">{{ post.title }}</h4>
                             </a>
-                            <a href="#" class="card-link">
-                                <i class="fas fa-eye"></i>4.5k Views</a>
-                            <a href="#" class="card-link">
-                                <i class="fas fa-comment-dots"></i>07</a>
-                            <a href="#" class="card-link">
-                                <i class="fas fa-share"></i>362</a>
+
                         </div>
                     </div>
                 </div>
