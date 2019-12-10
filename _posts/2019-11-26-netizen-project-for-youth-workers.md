@@ -6,6 +6,6 @@ layout: post
 
 Youth Organization are welcome to use our Netizen project for their activities while working with young people.
 
-[Download Netizen Project](/A4_BOOKLET.pdf)
+[Download Netizen Project](/pdf/A4_BOOKLET.pdf)
 
 &nbsp;

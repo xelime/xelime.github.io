@@ -31,10 +31,6 @@
 <loc>http://localhost:4000/pricing.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/A4_BOOKLET.pdf</loc>
-<lastmod>2019-11-26T15:02:03+04:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/blog/fonts/eurostile/demo.html</loc>
 <lastmod>2019-12-09T07:31:41+04:00</lastmod>
 </url>
@@ -45,6 +41,10 @@
 <url>
 <loc>http://localhost:4000/fonts/eurostile/demo.html</loc>
 <lastmod>2019-12-09T07:31:41+04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/pdf/A4_BOOKLET.pdf</loc>
+<lastmod>2019-11-26T15:02:03+04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/pdf/info.pdf</loc>
