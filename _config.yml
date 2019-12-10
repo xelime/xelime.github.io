@@ -109,7 +109,7 @@ hero_product_video_btn_one_text:  'Browse free demo'
 hero_product_background_image_name: ''
 hero_product_background_image_text: 'XELI is an independent non-profit making organisation that is based in Tbilisi, Georgia. XELI consists of human rights activists, youth workers, educators and professionals working in the field of digital security, privacy, internet freedom.'
 #hero_product_background_image_image: '#'
-#hero_product_background_image_btn_one_link: '#'
+hero_product_background_image_btn_one_link: 'https://xeli.me/about'
 hero_product_background_image_btn_one_text:  'More About Us'
 
 # product_fixed_image
