@@ -1,10 +1,7 @@
 ---
-layout: post
 title: NETIZEN Project for Youth Workers
-featured: true
-author: XELI
-tags:
-image: /Badges_02.png
+image: 'img/blog/Badges_02.png'
+layout: post
 ---
 
 Youth Organization are welcome to use our Netizen project for their activities while working with young people.

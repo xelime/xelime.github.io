@@ -1,25 +1,23 @@
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name='description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
 
-  <style>
-    {% capture inlineCSS %}
-      {% include app.scss %}
-    {% endcapture %}
-
-    {{ inlineCSS | scssify }}
-  </style>
-
-  <script>
-    var base_url = {{ site.baseurl | jsonify }},
-        pagination_next_url = base_url + '{{ paginator.next_page_path }}',
-        pagination_next_page_number = '{{ paginator.next_page }}',
-        pagination_available_pages_number = '{{ paginator.total_pages }}';
-  </script>
+    <link href="{{ 'fonts/eurostile/stylesheet.css' }}" rel="stylesheet">
+    <!-- ===========================================
+		CSS
+	============================================= -->
+    <link rel="stylesheet" href="{{ 'css/linearicons.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/font-awesome.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/bootstrap.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/magnific-popup.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/nice-select.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/animate.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/owl.carousel.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+    {% include seo.html %}
 </head>

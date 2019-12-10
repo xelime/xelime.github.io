@@ -1,38 +1,39 @@
-<footer class='c-footer'>
-  <div class='o-grid'>
 
+    <!-- start footer Area -->
+    <footer class="footer-area aquablue-bg">
+        <div class="container">
+            <div class="row">
 
-    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
-      <p class='u-font-medium'>Navigation</p>
+                <div class="col-lg-2 col-md-6">
+                    <div class="single-footer-widget">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="{{ site.footer_facebook_link }}">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.footer_twitter_link }}">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.footer_instagram_link }}">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
 
-      <ul class='c-footer-list o-plain-list'>
-        {% include navigation.html %}
-      </ul>
-    </div>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
-      <p class='u-font-medium'>Newsletter</p>
-
-      {% include subscribe-form.html %}
-    </div>
-
-    <div class='o-grid__col o-grid__col--full'>
-      <div class='c-footer__bottom'>
-        <div class='o-grid'>
-
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
-            <div class='u-font-tiny c-footer__copyright'>
-              {{ site.time | date: '%Y' }} {{ site.title }}
             </div>
-          </div>
-
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
-            {% include social-icons.html %}
-          </div>
-
+            <div class="footer-bottom row justify-content-center mt-70">
+                <p class="footer-text m-0 col-lg-6 col-md-12">{{ site.copyright_text }}
+                    <a href="{{ site.company_url }}">{{ site.name }}</a>
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
+    </footer>
+    <!-- End footer Area -->

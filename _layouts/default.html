@@ -1,29 +1,73 @@
+---
+layout: compress.html
+---
+
+{% if page.name == 'blog' %}
+
+{% assign body_class = 'version-blog' %}
+
+{% elsif site.hero == 'product_background_image' %}
+
+{% assign body_class = 'version4' %}
+
+{% elsif site.hero == 'product_fixed_image' %}
+
+{% assign body_class = 'version7' %}
+
+{% elsif site.hero == 'product' %}
+
+{% assign body_class = 'version2' %}
+
+{% elsif site.hero == 'product_slider' %}
+
+{% assign body_class = 'version9' %}
+
+{% elsif site.hero == 'product_video' %}
+
+{% assign body_class = 'version9' %}
+
+{% elsif site.hero == 'saas_video' %}
+
+{% assign body_class = 'version8' %}
+
+{% elsif site.hero == 'sass_background_image' %}
+
+{% assign body_class = 'version3' %}
+
+{% elsif site.hero == 'sass_fixed_image' %}
+
+{% assign body_class = 'version1-1' %}
+
+{% elsif site.hero == 'sass_slider' %}
+
+{% assign body_class = 'version8' %}
+    
+{% elsif site.hero == "sass" %}
+
+{% assign body_class = 'version1' %}
+
+{% else %}
+
+{% assign body_class = 'version1' %}
+
+{% endif %}
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="zxx" class="no-js">
 
 {% include head.html %}
 
-<body class='{% if page.url == '/' %} is-home {% endif %}'>
+<body class="{{ body_class }}">
 
-  {% include analytics.html %}
+	{% include header.html %}
 
-  <div class='js-off-canvas-container c-off-canvas-container'>
-    {% include header.html %}
-
-    {{ content }}
+	{{ content }}
 
     {% include footer.html %}
-  </div>
 
-  <script src="{{ '/js/jquery.min.js' | prepend: site.baseurl }}">                 </script>
-  <script src="{{ '/js/jquery.viewportchecker.min.js' | prepend: site.baseurl }}"> </script>
-  <script src="{{ '/js/jquery.ghostHunter.min.js' | prepend: site.baseurl }}">     </script>
-  <script src="{{ '/js/evil-icons.min.js' | prepend: site.baseurl }}">             </script>
-  <script src="{{ '/js/jquery.fitvids.js' | prepend: site.baseurl }}">             </script>
-  <script src="{{ '/js/instafeed.min.js' | prepend: site.baseurl }}">              </script>
-  <script src="{{ '/js/transition.js' | prepend: site.baseurl }}">                 </script>
-  <script src="{{ '/js/zoom.min.js' | prepend: site.baseurl }}">                   </script>
-  <script src="{{ '/js/app.js' | prepend: site.baseurl }}">                        </script>
+    {% include scripts.html %}
 </body>
 
 </html>
+
+

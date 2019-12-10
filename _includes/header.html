@@ -1,49 +1,69 @@
-            {% include social-icons.html %}
+{% if include.header_id == 'header7' %}
 
-<header class='c-header'>
-  <div class='o-grid'>
+{% assign header_id = include.header_id %}
 
-    <div class='o-grid__col o-grid__col--3-4-s o-grid__col--4-4-m'>
-      <div class='c-logo'>
-        {% if site.logo %}
-          <a href='{{ site.baseurl }}/'>
-            <img class='c-logo__img' src='{{ site.logo }}' alt='{{ site.title }}'>
-          </a>
-        {% else %}
-          <a class='c-logo__link' href='{{ site.baseurl }}/'>{{ site.title }}</a>
-        {% endif %}
-      </div>
-    </div>
+{% elsif site.hero == 'product_background_image' %}
 
-    <div class='o-grid__col o-grid__col--1-4-s o-grid__col--3-4-l o-grid__col--full'>
-      <div class='c-off-canvas-content js-off-canvas-content'>
-        <label class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
-          <span class='c-off-canvas-toggle__icon'></span>
-        </label>
+{% assign header_id = "header2" %}
 
-        <div class='o-grid'>
-          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-l o-grid__col--full'>
-            <nav class='c-nav-wrap'>
-              <ul class='c-nav o-plain-list'>
-                {% include navigation.html %}
-                <li class='c-nav__item'>
-                  <a class='toggle-search-button js-search-toggle' href='#' aria-label='Search'>
-                    <span class='c-nav__icon' data-icon='ei-search' data-size='s'></span>
+{% elsif site.hero == 'product_fixed_image' %}
 
-                  </a>
-                </li>
+{% assign header_id = "header7" %}
 
-              </ul>
-            </nav>
-          </div>
+{% elsif site.hero == 'product' %}
+
+{% assign header_id = "header" %}
+
+{% elsif site.hero == 'product_slider' %}
+
+{% assign header_id = "header2" %}
+
+{% elsif site.hero == 'product_video' %}
+
+{% assign header_id = "header2" %}
+
+{% elsif site.hero == 'saas_video' %}
+
+{% assign header_id = "header2" %}
+
+{% elsif site.hero == 'sass_background_image' %}
+
+{% assign header_id = "header2" %}
+
+{% elsif site.hero == 'sass_fixed_image' %}
+
+{% assign header_id = "header2" %} 
+
+{% elsif site.hero == 'sass_slider' %}
+
+
+{% assign header_id = "header2" %}
+
+{% elsif site.hero == "sass" %}
+
+{% assign header_id = "header" %}
+
+{% else %}
+
+{% assign header_id = "header" %}
+
+{% endif %}
+
+    <!-- start Header Area -->
+    <header id="{{ header_id }}" >
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div id="logo">
+                    <a href="{{ '/' | relative_url }}">
+                        <img class="logo-1" src="{{ 'img/logo.png' | relative_url }}" alt="" title="" />
+                    </a>
+                    <a href="{{ '/' | relative_url }}">
+                        <img class="logo-2" src="{{ 'img/logo.png' | relative_url }}" alt="" title="" />
+                    </a>
+                </div>
+            {% include nav-menu.html %}
+            </div>
         </div>
-      </div>
+    </header>
+    <!-- End Header Area -->
 
-      <label class='js-off-canvas-toggle c-off-canvas-toggle' aria-label='Toggle navigation'>
-        <span class='c-off-canvas-toggle__icon'></span>
-      </label>
-    </div>
-  </div>
-</header>
-
-{% include search-form.html %}

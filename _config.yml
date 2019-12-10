@@ -1,57 +1,579 @@
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-theme_version: 1.0.4
+####################################
+######     Global start     ######
+####################################
+name                : 'XELI'
+title               : 'XELI'
+email               : info@xeli.me
+address             : '2216 Park Avenue, California 95630 '
+phone               : 0185612012035
+tagline             : 'description for your new site here'
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl             : "" # the subpath of your site, e.g. /blog
+url                 : "http://127.0.0.1:4000/" #  7277783  the base hostname & protocol for your site, e.g. http://example.com
+twitter_username    : jekyllrb
+github_username     :  jekyll
+favicon: 'img/favicon.png'
 
-# Site settings
-title:              XELI
-logo:               'https://xeli.me/images/logo.png'
-description:        DigiSec for Youth Workers
-baseurl:            '' # The subpath of your site, e.g. /blog
-url:                'https://xeli.me/' # The base hostname & protocol for your site
-twitter:            https://twitter.com/xeli_me
-facebook:           https://www.facebook.com/xeli.me
-instagram:          https://www.instagram.com/xeli.me
+paginate: 12
+paginate_path: "/blog/page:num/"
 
-markdown:  kramdown
-permalink: pretty
-paginate:  11
-sass:
-  style: compressed
 
-gems:
-  - jekyll-paginate
-  - jekyll/tagging
 
-include:
-  - _pages
+# Build settings
+markdown            : kramdown
 
+# all plugin
+plugins:
+  - jekyll-feed
+
+# google_analytics
+google_analytics: ''
+
+# disqus comment
+disqus:
+  shortname: ''
+
+
+####################################
+######     Hero start     ######
+####################################
+# product_background_image          sass
+# product_fixed_image               saas_video
+# product                           sass_background_image
+# product_slider                    sass_fixed_image
+# product_video                     sass_slider
+
+hero: 'product_background_image'
+
+# sass [ only one image ]
+hero_sass_name: 'We Made our <br> Software 100% Errorless'
+hero_sass_text: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected.'
+hero_sass_image: 'img/hero/hero-img.png'
+hero_sass_btn_one_link: '#'
+hero_sass_btn_one_text:  'Start a project'
+hero_sass_btn_two_link: '#'
+hero_sass_btn_two_text: ' View Pricing '
+
+# saas_video [ video type mp4 ]
+hero_saas_video_name: 'We Made our <br> Software 100% Errorless'
+hero_saas_video_text: 'The first is a non technical method which requires the use of adware removal software.  Download free adware and spyware removal software and use advanced tools to help prevent  getting infected.'
+hero_saas_video_image: 'img/mockup.png'
+hero_saas_video_video: 'vdo/sass-bv.mp4'
+hero_saas_video_btn_one_link: '#'
+hero_saas_video_btn_one_text:  'Browse free demo'
+
+# sass_background_image
+hero_sass_background_image_name: 'We Made our <br> Software 100% Errorless'
+hero_sass_background_image_text: 'The first is a non technical method which requires the use of adware removal software.  Download free adware and spyware removal software and use advanced tools to help prevent  getting infected.'
+hero_sass_background_image_image: 'img/mockup.png'
+hero_sass_background_image_btn_one_link: '#'
+hero_sass_background_image_btn_one_text:  'Browse free demo'
+
+# sass_fixed_image
+hero_saas_fixed_image_name: 'We Made our <br> Software 100% Errorless'
+hero_saas_fixed_image_text: 'The first is a non technical method which requires the use of adware removal software.  Download free adware and spyware removal software and use advanced tools to help prevent  getting infected.'
+hero_saas_fixed_image_image: 'img/mockup.png'
+hero_saas_fixed_image_btn_one_link: '#'
+hero_saas_fixed_image_btn_one_text:  'Browse free demo'
+
+# sass_slider
+hero_sass_slider_name: 'We Made our <br> Software 100% Errorless'
+hero_sass_slider_image: 'img/mockup.png'
+hero_sass_slider_btn_one_link: '#'
+hero_sass_slider_btn_one_text:  'Browse free demo'
+hero_sass_slider:
+  - image: 'img/carusel/s1.jpg'
+  - image: 'img/carusel/s2.jpg'
+  - image: 'img/carusel/s3.jpg'
+
+# product [ only one image ]
+hero_product_name: 'The most Creative <br> Theme ever for Business'
+hero_product_text: 'The first is a non technical method which requires the use of adware removal software. Download  free adware and spyware removal software and use advanced tools to help prevent getting infected.'
+hero_product_image: 'img/hero/hero-img2.png'
+hero_product_btn_one_link: '#'
+hero_product_btn_one_text:  'Browse free demo'
+
+# product_video [ video type mp4 ]
+hero_product_video_name: 'The most Creative <br> Theame ever in Business'
+hero_product_video_text: 'The first is a non technical method which requires the use of adware removal software. ownload free adware and spyware removal'
+hero_product_video_image: 'img/iPhoneX.png'
+hero_product_video_video: 'vdo/app-bv.mp4'
+hero_product_video_btn_one_link: '#'
+hero_product_video_btn_one_text:  'Browse free demo'
+
+# product_background_image
+hero_product_background_image_name: ''
+hero_product_background_image_text: 'XELI is an independent non-profit making organisation that is based in Tbilisi, Georgia. XELI consists of human rights activists, youth workers, educators and professionals working in the field of digital security, privacy, internet freedom.'
+#hero_product_background_image_image: '#'
+#hero_product_background_image_btn_one_link: '#'
+hero_product_background_image_btn_one_text:  'More About Us'
+
+# product_fixed_image
+hero_product_fixed_image_name: 'The most Creative <br> Theame ever in Business'
+hero_product_fixed_image_text: 'The first is a non technical method which requires the use of adware removal software.  Download free adware and spyware removal software and use advanced tools to help prevent  getting infected.'
+hero_product_fixed_image_image: 'img/iPhoneX.png'
+hero_product_fixed_image_btn_one_link: '#'
+hero_product_fixed_image_btn_one_text:  'Browse free demo'
+
+# product_slider
+hero_product_slider_name: 'The most Creative <br> Theame ever in Business'
+hero_product_slider_text: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected.'
+hero_product_slider_image: 'img/iPhoneX.png'
+hero_product_slider_btn_one_link: '#'
+hero_product_slider_btn_one_text:  'Browse free demo'
+hero_product_slider:
+  - image: 'img/carusel/a1.jpg'
+  - image: 'img/carusel/a2.jpg'
+  - image: 'img/carusel/a3.jpg'
+
+# hero-section-blog
+
+hero_blog_slider:
+  - image: 'img/hero/hero-blog.jpg'
+    author: 'Sir Alex James'
+    title: 'The Idea Of God Is <br /> Not Henceforth Relevant'
+    category: 'Technical'
+
+  - image: 'img/hero/hero-blog.jpg'
+    author: 'Sir Alex James'
+    title: 'The Idea Of God Is <br /> Not Henceforth Relevant'
+    category: 'Art &amp; Fantacy'
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
 exclude:
-  - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+# Plugins (previously gems:)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
 
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
 
-# Authors
-authors:
-  XELI:
-    name:     XELI
-    bio:      
-    gravatar: 
-    email:    
-    website:  
-    github:   
-    twitter:  
+####################################
+######      Global end      ######
+####################################
+
+
+
+
+
+####################################
+######  feature Section   ######
+####################################
+
+feature_image_one: 'img/feature/i1.png'
+feature_title_one: 'Collaboration'
+feature_description_one: 'Some days a motivational quote can provide a quick pick-me-up for employees and even  management.'
+
+feature_image_two: 'img/feature/i3.png'
+feature_title_two: 'Full of features'
+feature_description_two: 'Some days a motivational quote can provide a quick pick-me-up for employees and even management.'
+
+feature_image_three: 'img/feature/i4.png'
+feature_title_three: 'Global Framework'
+feature_description_three: 'Some days a motivational quote can provide a quick pick-me-up for employees and even management.'
+
+
+####################################
+######  marketing Section   ######
+####################################
+marketing_title: 'Build Your Brand  Automate Your Marketing'
+marketing_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected. Spyware scan review is a free service for anyone interested in downloading spyware/adware removal software. Our adware remover is the most trusted.'
+marketing_image_one: '/img/marketing/d1.png'
+marketing_image_two: '/img/marketing/d2.png'
+marketing_btn_text: 'Browse free demo'
+marketing_btn_link: '#'
+
+
+####################################
+######  Statistics Section    ######
+####################################
+statistics_title: 'We glow with Our Statistics'
+statistics_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+statistics_image: 'img/title-icon.png'
+
+# main big image
+statistics_start_image: 'img/stat/stat-img.png'
+
+# 4 section image
+statistics_item_one_image: 'img/stat/s1.png'
+statistics_item_one_title: 'Productivity'
+statistics_item_one_link: '#'
+statistics_item_one_description: 'Making changes in your life is great and it is the way we grow and develop as people. Change is a constant.'
+
+statistics_item_two_image: 'img/stat/s2.png'
+statistics_item_two_title: 'Sales Monitoring'
+statistics_item_two_link: '#'
+statistics_item_two_description: 'Making changes in your life is great and it is the way we grow and develop as people. Change is a constant.'
+
+statistics_item_three_image: 'img/stat/s2.png'
+statistics_item_three_title: 'Payment Stats'
+statistics_item_three_link: '#'
+statistics_item_three_description: 'Making changes in your life is great and it is the way we grow and develop as people. Change is a constant.'
+
+statistics_item_four_image: 'img/stat/s4.png'
+statistics_item_four_title: 'Pending Clearnance'
+statistics_item_four_link: '#'
+statistics_item_four_description: 'Making changes in your life is great and it is the way we grow and develop as people. Change is a constant.'
+
+####################################
+######    cta Section      ######
+####################################
+cta_title: 'Fallen in Love with <br> our features? Get a free trial for 14 days!'
+cta_btn_link_one: '#'
+cta_btn_text_one: 'Start free trial'
+cta_btn_link_two: '#'
+cta_btn_text_two: 'Signup'
+
+####################################
+######    Social Section      ######
+####################################
+social_title: 'Manage Social Network with Our Managing Toolkit'
+social_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools to help prevent getting infected. Spyware scan review is a free service for anyone interested in downloading spyware/adware removal software. Our adware remover is the most trusted.'
+social_image: 'img/social-img.png'
+social_button_text: 'Browse free demo'
+social_button_link: '#'
+
+
+#####################################
+########## Pricing Tables ###########
+#####################################
+pricing-table-title: 'Select your Best Pricing'
+pricing-table-description: "The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected. "
+
+# Personal Plan
+plan-starter-name: starter
+plan-starter-tagline: Small business holders
+plan-starter-price: '<span>£29</span>/mo'
+plan-starter-offer-line-1-info:  2 User permission
+plan-starter-offer-line-2-info:  Customization Allowed
+plan-starter-offer-line-3-info:  Social media tool Enabled
+plan-starter-offer-line-4-info:  No Online Support
+plan-starter-offer-line-5-info:  6 Months Backup
+plan-starter-url: '#'
+plan-starter-btn_text: 'Get Started'
+
+# Team Plan
+plan-standard-name: standard
+plan-standard-tagline: Small business holders
+plan-standard-price: '<span>£49</span>/mo'
+plan-standard-offer-line-1-info: 2 User permission
+plan-standard-offer-line-2-info: Customization Allowed
+plan-standard-offer-line-3-info: Social media tool Enabled
+plan-standard-offer-line-4-info: No Online Support
+plan-standard-offer-line-5-info:  6 Months Backup
+plan-standard-url: '#'
+plan-standard-btn_text: 'Get Started'
+
+
+# business Plan
+plan-business-name: premium
+plan-business-tagline: Small business holders
+plan-business-price: '<span>£99</span>/mo'
+plan-business-offer-line-1-info: 2 User permission
+plan-business-offer-line-2-info: Customization Allowed
+plan-business-offer-line-3-info: Social media tool Enabled
+plan-business-offer-line-4-info: No Online Support
+plan-personal-offer-line-5-info: 6 Months Backup
+plan-business-url: '#'
+plan-business-btn_text: 'Get Started'
+
+
+
+
+#####################################
+########## Unique Feature ###########
+#####################################
+
+unique_feature_title: 'Features that make us Stand Out'
+unique_feature_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+unique_feature_image: 'img/title-icon.png'
+
+unique_feature_main_image_slider:
+  - image: 'img/carusel/c1.png'
+  - image: 'img/carusel/c2.png'
+  - image: 'img/carusel/c3.png'
+
+unique_feature_section_one_title: 'Certifications'
+unique_feature_section_one_description: 'We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to day, also asks us to remain.'
+unique_feature_section_one_image: http://127.0.0.1:4000/img/feature/f1.png
+unique_feature_section_one_link: '#'
+
+unique_feature_section_two_title: 'Page Builder'
+unique_feature_section_two_description: 'Vera sought out counseling with me because her doctor advised her to discover the emotional causes of her chronic fatigue.'
+unique_feature_section_two_image: http://127.0.0.1:4000/img/feature/f2.png
+unique_feature_section_two_link: '#'
+
+
+#####################################
+######## important points ###########
+#####################################
+
+important_points_title: 'Features that make us Stand Out'
+important_points_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+important_points_image: 'img/title-icon.png'
+
+important_points:
+  - title: 'Search <br> Management<br> System'
+    icon: 'img/points/i1.png'
+    description: 'Staying calm, composed and maintaining strong self esteem in today’s tough environment can be difficult but is not impossible if you follow a few simple guidelines.'
+  - title: 'Data <br> Synchronization <br> Options'
+    icon: 'img/points/i2.png'
+    description: ' We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to day, also asks us to remain physically young. Young at heart. '
+  - title: 'Team <br> Management <br> Facilities'
+    icon: 'img/points/i3.png'
+    description: ' Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful. They are capable of influencing. '
+  - title: 'Schedule <br> Adjustment <br> System'
+    icon: 'img/points/i4.png'
+    description: ' Have you ever had a problem with a burned light? Thanks to the effort of Thomas Edison we no longer need to invent a light bulb. We just go to the store.  '
+
+
+
+
+#####################################
+#########  Brands Section ###########
+#####################################
+
+bands_slider:
+  - image: 'img/brands/b1.png'
+    link: '#'
+  - image: 'img/brands/b2.png'
+    link: '#'
+  - image: 'img/brands/b3.png'
+    link: '#'
+  - image: 'img/brands/b4.png'
+    link: '#'
+  - image: 'img/brands/b5.png'
+    link: '#'
+  - image: 'img/brands/b6.png'
+    link: '#'
+  - image: 'img/brands/b7.png'
+    link: '#'
+  - image: 'img/brands/b8.png'
+    link: '#'
+  - image: 'img/brands/b9.png'
+    link: '#'
+  - image: 'img/brands/b10.png'
+    link: '#'
+
+
+
+
+#####################################
+########### Testimonials ############
+#####################################
+
+testimonials:
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+
+# Client
+- author: 'Travor James'
+  avatar: '/img/review/user.png'
+  position: 'Head of Marketing, Apple Inc.'
+  quotes: 'Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+#####################################
+##########      FAQ       ###########
+#####################################
+faq-title: 'Select your Best Pricing'
+faq-description: "The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected. "
+
+#General Issues
+
+faq_general_issues_01_title: 'Dude You Re Getting A Telescope'
+faq_general_issues_01_description: 'Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.'
+
+faq_general_issues_02_title: 'The Basics Of Buying A Telescope'
+faq_general_issues_02_description: 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. leo quam aliquet diam, congue laoreet elit metus eget diam.'
+
+faq_general_issues_03_title: 'Astronomy Binoculars A Great Alternative'
+faq_general_issues_03_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+faq_general_issues_04_title: 'Do Your Self Realizations Quickly Fade'
+faq_general_issues_04_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+faq_general_issues_05_title: 'Success Steps For Your Personal Or Business Life'
+faq_general_issues_05_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+
+#Support Issues
+
+
+faq_support_issues_01_title: 'Success Steps For Your Personal Or Business Life'
+faq_support_issues_01_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+faq_support_issues_02_title: 'Dude You Re Getting A Telescope'
+faq_support_issues_02_description: 'Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.'
+
+faq_support_issues_03_title: 'The Basics Of Buying A Telescope'
+faq_support_issues_03_description: 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. leo quam aliquet diam, congue laoreet elit metus eget diam.'
+
+faq_support_issues_04_title: 'Astronomy Binoculars A Great Alternative'
+faq_support_issues_04_description:
+
+
+#Refund Issues
+
+faq_refund_issues_01_title: 'The Basics Of Buying A Telescope'
+faq_refund_issues_01_description: 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. leo quam aliquet diam, congue laoreet elit metus eget diam.'
+
+faq_refund_issues_02_title: 'Astronomy Binoculars A Great Alternative'
+faq_refund_issues_02_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+faq_refund_issues_03_title: 'Do Your Self Realizations Quickly Fade'
+faq_refund_issues_03_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+faq_refund_issues_04_title: 'Success Steps For Your Personal Or Business Life'
+faq_refund_issues_04_description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Proin ac metus diam.'
+
+
+
+
+#####################################
+##########     Blog      ###########
+#####################################
+blog-title: 'Latest Posts from our Blog'
+blog-description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+
+
+#####################################
+##########     Contact      ###########
+#####################################
+contact_title: 'Whenever You Need, Just Send a Message'
+contact_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+contact_image: 'img/title-icon.png'
+contact_email: 'support@demo.com'
+contact_phone: '00 (440) 9865 562 9865'
+contact_address: 'Los Angeles, United States'
+
+#####################################
+##########     footer      ###########
+#####################################
+
+footer_title: 'About Us'
+footer_description: 'About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about. 11% of all adult internet user visit websites.'
+
+footer_resources_link_heading: 'Resources'
+footer_resources_link_one_text: 'Guides'
+footer_resources_link_one_link: '#'
+footer_resources_link_two_text: 'Research'
+footer_resources_link_one_link: '#'
+footer_resources_link_three_text: 'Experts'
+footer_resources_link_one_link: '#'
+footer_resources_link_four_text: 'Agencies'
+footer_resources_link_one_link: '#'
+
+
+footer_features_link_heading: 'Features'
+footer_features_link_one_text: 'Guides'
+footer_features_link_one_link: '#'
+footer_features_link_two_text: 'Research'
+footer_features_link_one_link: '#'
+footer_features_link_three_text: 'Experts'
+footer_features_link_one_link: '#'
+footer_features_link_four_text: 'Agencies'
+footer_features_link_one_link: '#'
+
+
+footer_facebook_link: 'https://www.facebook.com/xeli.me/'
+footer_twitter_link: 'https://twitter.com/xeli_me'
+footer_instagram_link: 'https://www.instagram.com/xeli.me/'
+
+mailchimp:
+  user-id:
+  list-id:
+
+
+####################################
+######        Copyright       ######
+####################################
+copyright_text: Copyright © 2019 All rights reserved to
+company_url: 'XELI'
+
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#google map api key
+
+map: 'AIzaSyA7nx22ZmINYk9TGiXDEXGVxghC43Ox6qA'

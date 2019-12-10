@@ -1,10 +1,8 @@
 ---
-layout: post
 title: Security 101 Day One Recap
-featured: true
-author: XELI
-tags:
-image: /Badges_02.png
+image: 'img/blog/Badges_02.png'
+layout: post
+
 ---
 
 #### DAY 1: INTRODUCTION
