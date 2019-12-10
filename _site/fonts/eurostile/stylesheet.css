@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-Bold.eot');
+    src: url('EurostileLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-Bold.woff2') format('woff2'),
+        url('EurostileLTStd-Bold.woff') format('woff'),
+        url('EurostileLTStd-Bold.ttf') format('truetype'),
+        url('EurostileLTStd-Bold.svg#EurostileLTStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd.eot');
+    src: url('EurostileLTStd.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd.woff2') format('woff2'),
+        url('EurostileLTStd.woff') format('woff'),
+        url('EurostileLTStd.ttf') format('truetype'),
+        url('EurostileLTStd.svg#EurostileLTStd') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-Cn.eot');
+    src: url('EurostileLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-Cn.woff2') format('woff2'),
+        url('EurostileLTStd-Cn.woff') format('woff'),
+        url('EurostileLTStd-Cn.ttf') format('truetype'),
+        url('EurostileLTStd-Cn.svg#EurostileLTStd-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-Ex2.eot');
+    src: url('EurostileLTStd-Ex2.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-Ex2.woff2') format('woff2'),
+        url('EurostileLTStd-Ex2.woff') format('woff'),
+        url('EurostileLTStd-Ex2.ttf') format('truetype'),
+        url('EurostileLTStd-Ex2.svg#EurostileLTStd-Ex2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-BoldCn.eot');
+    src: url('EurostileLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-BoldCn.woff2') format('woff2'),
+        url('EurostileLTStd-BoldCn.woff') format('woff'),
+        url('EurostileLTStd-BoldCn.ttf') format('truetype'),
+        url('EurostileLTStd-BoldCn.svg#EurostileLTStd-BoldCn') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-Demi.eot');
+    src: url('EurostileLTStd-Demi.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-Demi.woff2') format('woff2'),
+        url('EurostileLTStd-Demi.woff') format('woff'),
+        url('EurostileLTStd-Demi.ttf') format('truetype'),
+        url('EurostileLTStd-Demi.svg#EurostileLTStd-Demi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-Oblique.eot');
+    src: url('EurostileLTStd-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-Oblique.woff2') format('woff2'),
+        url('EurostileLTStd-Oblique.woff') format('woff'),
+        url('EurostileLTStd-Oblique.ttf') format('truetype'),
+        url('EurostileLTStd-Oblique.svg#EurostileLTStd-Oblique') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-BoldEx2.eot');
+    src: url('EurostileLTStd-BoldEx2.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-BoldEx2.woff2') format('woff2'),
+        url('EurostileLTStd-BoldEx2.woff') format('woff'),
+        url('EurostileLTStd-BoldEx2.ttf') format('truetype'),
+        url('EurostileLTStd-BoldEx2.svg#EurostileLTStd-BoldEx2') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-BoldOblique.eot');
+    src: url('EurostileLTStd-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-BoldOblique.woff2') format('woff2'),
+        url('EurostileLTStd-BoldOblique.woff') format('woff'),
+        url('EurostileLTStd-BoldOblique.ttf') format('truetype'),
+        url('EurostileLTStd-BoldOblique.svg#EurostileLTStd-BoldOblique') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url('EurostileLTStd-DemiOblique.eot');
+    src: url('EurostileLTStd-DemiOblique.eot?#iefix') format('embedded-opentype'),
+        url('EurostileLTStd-DemiOblique.woff2') format('woff2'),
+        url('EurostileLTStd-DemiOblique.woff') format('woff'),
+        url('EurostileLTStd-DemiOblique.ttf') format('truetype'),
+        url('EurostileLTStd-DemiOblique.svg#EurostileLTStd-DemiOblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
